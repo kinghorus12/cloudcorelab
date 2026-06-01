@@ -1,0 +1,16 @@
+# OpenStack client configuration for CloudCoreLab
+# Usage: export OS_CLOUD=cloudcorelab
+# Then:  openstack server list
+
+clouds:
+  cloudcorelab:
+    auth:
+      auth_url: http://10.20.20.1:5000/v3
+      project_name: admin
+      username: admin
+      password: YOUR_ADMIN_PASSWORD   # snap get microstack config.credentials.keystone-password
+      user_domain_name: Default
+      project_domain_name: Default
+    region_name: microstack
+    interface: public
+    identity_api_version: 3
