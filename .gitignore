@@ -1,0 +1,10 @@
+*.pem
+*.key
+*_rsa
+*_rsa.pub
+clouds-secret.yaml
+.env
+__pycache__/
+*.pyc
+/tmp/
+.DS_Store
